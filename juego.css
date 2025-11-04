@@ -1,0 +1,67 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe6f0, #ffcce0);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4d6d;
+  margin-top: 40px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.hearts a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff4d6d;
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin: 10px;
+  display: inline-block;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hearts a:hover {
+  transform: scale(1.2) rotate(-5deg);
+  background: #ff1a4d;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff4d6d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  background: #ff1a4d;
+}

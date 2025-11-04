@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Juego Romántico</title>
+  <link rel="stylesheet" href="css/juego.css">
+  <style>
+    body { 
+      text-align: center; 
+      padding: 50px; 
+      background: #ffe6f0; 
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1 { 
+      font-size: 2.5rem; 
+      color: #ff4d6d; 
+      margin-bottom: 20px; 
+      animation: heartbeat 1.5s infinite; 
+    }
+    @keyframes heartbeat { 0%,100%{transform:scale(1);}50%{transform:scale(1.1);} }
+
+    .options a {
+      text-decoration: none;
+      color: #fff;
+      background: #ff4d6d;
+      padding: 15px 25px;
+      border-radius: 12px;
+      margin: 10px;
+      display: inline-block;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .options a:hover { transform: scale(1.2) rotate(-5deg); background: #ff1a4d; }
+
+    .message {
+      display: none;
+      margin-top: 30px;
+      background: #fff0f5;
+      padding: 25px;
+      border-radius: 15px;
+      color: #333;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align: left;
+    }
+
+    /* Mostrar mensaje seleccionado */
+    #num1:target, #num2:target, #num3:target { display: block; }
+
+    .reload {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff4d6d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .reload:hover { background: #ff1a4d; transform: scale(1.1); }
+
+  </style>
+</head>
+<body>
+
+<h1>¡Mini Juego! 💖</h1>
+<p>Escoge un número y descubre tu sorpresa:</p>
+
+<div class="options">
+  <a href="#num1">1</a>
+  <a href="#num2">2</a>
+  <a href="#num3">3</a>
+</div>
+
+<!-- Mensajes ocultos -->
+
+<div id="num1" class="message">
+  <h2>💖 Día que nos hicimos novios 💖</h2>
+  <p>
+    💫 Recuerdo ese día perfectamente 💫
+
+Voy a comenzar desde el inicio...
+
+Como sabemos, todo iba a ser diferente. Cuando nos conocimos, los dos teníamos cosas claras y sabíamos lo que queríamos, pero al final el destino y los sentimientos fueron los que dieron un giro inesperado.
+
+Ese día me levanté emocionado, porque sabía lo que quería, aunque no tenía previsto los contratiempos que vendrían.
+Fue el primero de julio cuando todo se alineó. Recuerdo que mi mami se fue a trabajar temprano; yo tenía dinero, ilusión y muchas ganas de verte, porque llevaba conmigo una sorpresa para ti.
+
+Alrededor de la 1 de la tarde salí de mi casa en Uber, pero había muchísimo tráfico, y tú tenías poco tiempo, así que todo dependía de la suerte.
+Todavía me faltaba un tramo para llegar, sin pila y sin manera de comunicarme contigo.
+
+Cuando por fin llegué a UNITEC, entré y te esperé ahí... justo en ese momento mi teléfono se apagó.
+Había una chica cerca y le pedí, de favor, si podía prestarme su cargador. Me senté unos minutos, y de pronto te vi pasar.
+Mi corazón se aceleró.
+Dije: “Es ella.”
+En ese instante me levanté y corrí tras de ti, gritando:
+“¡KAREN!”
+
+Volteaste y me dijiste “¡Hola!”, y yo estaba tan nervioso que no sabía ni qué decirte.
+Me presentaste con uno de tus amigos y, al despedirte de él, nos fuimos a un lugar más privado.
+
+Recuerdo que te di un cubo de tulipanes infinitos, y tu reacción fue tan linda que jamás la olvidaré.
+Ese día pasaron cositas lindas, aunque casi te regañan por llegar tarde al carro 😅
+
+Yo salí tan feliz de ahí que no podía dejar de sonreír y pensar en ti.
+Ese día supe que quería estar contigo, que al fin eras mi novia, y así comenzó nuestra historia de amor.
+
+💖 ¡Te amo, Karen! 💖
+  </p>
+</div>
+
+<div id="num2" class="message">
+  <h2>💌 Carta de amor romántica 💌</h2>
+  <p>
+    Mi amor,
+
+Desde que llegaste a mi vida todo cambió. No sé en qué momento tu sonrisa se volvió mi paz, ni cuándo tu voz se convirtió en la melodía que quiero escuchar todos los días. Lo único que sé es que desde entonces ya no imagino un mundo sin ti.
+
+Cada momento a tu lado es un regalo. Tus abrazos me hacen sentir en casa, tus palabras me llenan el alma y tu forma de mirar me hace creer que el amor verdadero sí existe. Contigo aprendí que no se necesita perfección, solo dos corazones dispuestos a cuidarse y amarse sin medida.
+
+A veces me quedo pensando en lo afortunado que soy por tenerte. Porque en un mundo tan grande, te encontré a ti… la persona que me entiende, me apoya, me hace reír y me da motivos para ser mejor cada día.
+
+Prometo seguir construyendo contigo esta historia hermosa que empezó casi sin darnos cuenta, pero que ahora es lo más importante para mí. Quiero seguir tomándote de la mano y hacerte sonreír incluso en los días grises.
+
+Gracias por ser tú. Por quedarte, por creer en mí, por amarme de una forma tan sincera.
+Eres mi sueño hecho realidad y mi razón de sonreír todos los días.
+  </p>
+</div>
+
+<div id="num3" class="message">
+  <h2>📸 Todas nuestras salidas 📸</h2>
+  <p>
+   💌 Cada momento contigo 💌
+
+No recuerdo muchas salidas, ya sabes que tengo memoria de Dori jajajaja 😅, pero sí sé que contigo cada una ha sido especial y única.
+
+Recuerdo las veces que fui a UNITEC, y aquella vez en la que casi me suben a la patrulla jajajaja.
+También recuerdo una más reciente, cuando fuimos al cine a ver mi película favorita. Gracias por eso, te amo. 💕
+Ese día también rompí un récord en la pera y comimos unos deliciosos taquitos al pastor. 🌮
+
+Cuando fuimos a Six Flags, estaba que me moría de miedo 😆, pero al final lo disfruté muchísimo, como no tienes idea. Gracias por regalarme momentos así.
+
+Y cómo olvidar cuando nos veíamos a escondidas de tu familia… gracias a esa persona que en su momento nos ayudó tanto a poder vernos. 🥹
+
+Cada salida contigo es diferente, única y especial.
+Gracias por cada momento que estás a mi lado. 💖
+</p>
+</div>
+<a href="miamor.html" class="menu-button">Volver al menú</a>
+
+
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lo que me recuerda a ti 💖</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffe4f0, #ffd6ec);
+      color: #4a2c35;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff6fa8;
+      font-size: 2.2em;
+    }
+    h2 {
+      color: #d94b85;
+    }
+
+    /* Galería horizontal con imágenes grandes */
+    .galeria {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 15px;
+      overflow-x: auto;
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
+    .galeria img {
+      width: 250px;
+      height: 400px; /* Más alargadas hacia abajo */
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid #ffb6d9;
+      box-shadow: 0 8px 20px rgba(255, 150, 190, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(255, 100, 160, 0.4);
+    }
+
+    .musica, .playlist, .dedicatoria {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(255, 150, 190, 0.2);
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 600px;
+    }
+    iframe {
+      margin-top: 10px;
+    }
+    .dedicatoria p {
+      font-size: 1.1em;
+      color: #66394d;
+    }
+    a.song-link img {
+      width: 200px;
+      border-radius: 20px;
+      border: 3px solid #ff8fb7;
+      transition: transform 0.3s ease;
+    }
+    a.song-link img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Lo que me recuerda a ti ❤️</h1>
+
+  <div class="galeria">
+    <img src="img/b.png.jpg" alt="Foto 1 con ella">
+    <img src="img/c.png.jpg" alt="Foto 2 con ella">
+    <img src="img/z.png.jpg" alt="Foto 3 con ella">
+    <img src="img/e.png.jpg" alt="Foto 4 con ella">
+    <img src="img/f.png.jpg" alt="Foto 5 con ella">
+  </div>
+
+  <div class="musica">
+    <h2>🎶 Nuestra canción 🎶</h2>
+    <a class="song-link" href="https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW" target="_blank">
+      <img src="img/song.jpg" alt="Portada de la canción">
+    </a>
+    <p>Haz clic en la imagen para escucharla en Spotify 💕</p>
+
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/3k3NWokhRRkEPhCzPmV8TW?utm_source=generator"
+      width="300" height="80" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+  </div>
+
+  <div class="playlist">
+    <h2>💗 Playlist que me recuerda a ti 💗</h2>
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/66fRTgtPOb7qc4FD7G3MVP"
+      width="100%" height="380" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+
+    <p>Cada canción me recuerda lo afortunado que soy de tenerte. 💞</p>
+  </div>
+
+  <div class="dedicatoria">
+    <p>💕 Gracias por ser mi felicidad, mi inspiración y mi mejor recuerdo.  
+    Todo esto y más siempre me recordará a ti. 💕</p>
+  </div>
+</body>
+</html>
+
